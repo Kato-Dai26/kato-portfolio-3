@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+section{
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  scroll-snap-align: start;
+}
+
+a:hover{
+  opacity: .5;
+}
+
+.container{
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+}
+
+.title{
+  font-family: 'Dancing Script', cursive;
+  font-size: 100px;
+  color: #fff;
+}
+
+a{
+  color: inherit;
+}
+
+.top{
+  background-image: url(../img/pan1.jpg);
+
+  height: 100vh;
+  text-align: center;
+}
+
+.top h1{
+  padding-top: 70px;
+}
+
+.top p{
+  padding-top: 80px;
+  font-size: 23px;
+  line-height: 2rem;
+  color: #fff;
+  text-shadow: #000 2px 2px 1px;
+  font-weight: bold;
+}
+
+.body{
+  background-image: url(../img/pan2.jpg);
+  height: 100vh;
+  padding: 50px 0 0 0;
+  color: #fff;
+  text-align: center;
+}
+
+.body_flex{
+  display: flex;
+  margin-top: 50px;
+  height: 100%;
+}
+
+.body ul{
+  margin: 0 auto;
+  list-style: none;
+}
+
+.body ul + ul{
+  margin-left: 20px;
+}
+
+.body ul li{
+  text-shadow: #000 2px 2px 1px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.body ul li + li{
+  margin-top: 10px;
+}
+
+.bottom{
+  background-image: url(../img/pan3.jpg);
+  height: 100vh;
+  text-align: center;
+  padding-top: 130px;
+}
+
+.bottom .title{
+  color: #555050;
+}
+
+.bottom p{
+  padding: 40px 0;
+  font-size: 23px;
+  line-height: 2rem;
+  font-weight: bold;
+  color: #000;
+  text-shadow: #fff 2px 2px 1px;
+}
+
+.bottom .contact{
+  display: inline-block;
+  text-decoration: none;
+  background-color: #555050;
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 8px;
+  font-size: 25px;
+}
+
+.strap{
+  padding-top: 40px;
+}
+
+.strap span{
+  background-color: #fff;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  font-size: 35px;
+}
+
+.twitter{
+  margin: 0 15px;
+}
+
+@media(max-width:900px){
+
+  .title{
+    font-size: 80px;
+  }
+
+  .top p{
+    font-size: 18px;
+  }
+
+  .body_flex{
+    font-size: 15px;
+  }
+
+  .body ul{
+    margin: 0 auto;
+  }
+  
+  .body ul + ul{
+    list-style: none;
+    margin-left: 20px;
+  }
+  
+  .body ul li{
+    font-size: 18px;
+  }
+  
+  .body ul li + li{
+    margin-top: 5px;
+  }
+
+  .bottom p{
+    font-size: 15px;
+  }
+  
+  .bottom .contact{
+    font-size: 20px;
+  }
+  
+  .strap span{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 25px;
+  }
+}
